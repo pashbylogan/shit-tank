@@ -8,9 +8,9 @@
 ## Derived Business Stats
 ```python
 
-customers = 45000
+customers = 45_000
 employees = 220
-revenue = 43000000
+revenue = 43_000_000
 revenue_per_customer = revenue/customers # ~ $950
 revenue_per_customer_per_month = revenue_per_customer/12
 print(revenue_per_customer_per_month) # ~$80
@@ -34,7 +34,7 @@ print(routes_per_day) # 9 (drivers?)
 # operating costs?
 salary_average = 40000
 payroll = employees * salary_average
-print(payroll) # ~$8.8M
+print(payroll) # ~ $8_800_000
 
 ```
 
@@ -42,14 +42,32 @@ print(payroll) # ~$8.8M
 
 ```python
 
-customers = 45000
+customers = 45_000
 salary_per_hour = 20
-annual_salary = salary_per_hour * 2000
+annual_salary = salary_per_hour * 2_000
 price_per_message = 0.0075 # twilio (vonage = 0.0064)
 annual_cost_ceiling = 52 * customers * price_per_message
-print(annual_cost_ceiling) # $17,500 / year
+print(annual_cost_ceiling) # $17_500 / year
 
 hours_needed_to_save = annual_cost_ceiling / salary_per_hour
-print(hours_needed_to_save) # ~1000 hours needed to save
+print(hours_needed_to_save) # ~1_000 hours needed to save
+
+
 
 ```
+
+# Web Service
+
+## Calendar
+
+```python
+customers = 45_000
+geocoding_request_per_month = 3_000
+geocoding_cost_per_month = 15
+
+// cache the entire ssc db
+// geocoding_request_per_month = 45_000
+// geocoding_cost_per_month = 225
+
+```
+
